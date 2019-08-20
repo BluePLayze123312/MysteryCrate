@@ -146,7 +146,7 @@ class EventListener implements Listener{
 						$z = $block->getZ();
 						$config = $this->plugin->getBlocksConfig();
 						if(empty($config->get($type))){
-							$config->set($type, TextFormat::GOLD . ucfirst($type) . TextFormat::GREEN . " Crate");
+							$config->set($type, TextFormat::ORANGE . ucfirst($type) . TextFormat::BLUE . " Crate");
 							$config->set($type . ".x", $x);
 							$config->set($type . ".y", $y);
 							$config->set($type . ".z", $z);
